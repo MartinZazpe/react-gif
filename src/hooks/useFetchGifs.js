@@ -8,6 +8,7 @@ export const useFetchGifs = (category) => {
     const [isLoading, setIsLoading] = useState(true)
 
 
+    console.log(isLoading)
 
     useEffect(() => {
         getGifs(category).then(newImages => setImages(newImages))
